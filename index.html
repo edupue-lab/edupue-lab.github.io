@@ -4,49 +4,112 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eduardo Puebla</title>
-<meta name="description" content="Eduardo Puebla, 20. I study marketing and run AutonomIA, which sets up AI for property appraisers and other one-person practices.">
-<meta property="og:type" content="website">
+<meta name="description" content="Eduardo Puebla, 20. I set up AI for small businesses. It started with my stepfather, a property appraiser.">
+<meta property="og:type" content="profile">
 <meta property="og:title" content="Eduardo Puebla">
-<meta property="og:description" content="20. I study marketing and run AutonomIA, which sets up AI for property appraisers and other one-person practices.">
+<meta property="og:description" content="I'm 20 and I set up AI for small businesses. It started with my stepfather, a property appraiser.">
 <meta property="og:url" content="https://edupue-lab.github.io/">
 <meta property="og:image" content="https://edupue-lab.github.io/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23222'/%3E%3Ctext x='8' y='13' font-family='Georgia,serif' font-size='13' text-anchor='middle' fill='%23fff'%3Ee%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232456d6'/%3E%3Ctext x='8' y='12.5' font-family='Arial,sans-serif' font-size='11' text-anchor='middle' fill='%23fff'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
-<header>
-  <h1>Eduardo Puebla</h1>
-  <button type="button" id="theme">Dark mode</button>
+<header class="banner">
+  <nav class="bar" aria-label="Sections">
+    <a class="name" href="#top">Eduardo Puebla</a>
+    <span class="links">
+      <a href="#started">Story</a>
+      <a href="#work">How I work</a>
+      <a href="#skills">Skills</a>
+      <button type="button" id="theme" aria-pressed="false">Dark mode</button>
+    </span>
+  </nav>
 </header>
 
-<p><img class="me" src="assets/eduardo.jpg" width="600" height="600" alt="Eduardo Puebla">Hi, I'm Eduardo. I'm 20, I study marketing, and I've been using AI chatbots since they first came out. Most of my time outside class goes into AutonomIA, and some of it into the hardcore Minecraft server I run for my friends.</p>
+<main id="top">
+  <section class="hero col">
+    <img class="me" src="assets/eduardo.jpg" width="600" height="600" alt="Eduardo Puebla, smiling, outdoors in front of a range of hills">
+    <h1>Eduardo Puebla</h1>
+    <p class="lead">I'm 20 and I set up AI for small businesses. My stepfather was the first. Now other appraisers pay me to do it for them.</p>
+  </section>
 
-<h2>My stepfather</h2>
-<p>He's a property appraiser, and before AutonomIA existed I used to watch him spend hours at his laptop looking for comparables, writing reports that were mostly the last report again and typing whatever clients sent him into spreadsheets. I kept telling him half of that could be automated. It took ages before he agreed to pay for a subscription, and then I started automating his tasks one by one. After a while he was the one asking for a bigger plan with more credits, and I still look after his setup. Later I started doing the same for other appraisers.</p>
+  <section class="col" id="started">
+    <h2>How it started</h2>
+    <p class="first">For years I watched my stepfather lose whole afternoons at his laptop. He'd hunt for comparable sales and rewrite reports that were mostly the previous report, and then type whatever clients emailed him into spreadsheets.</p>
+    <p>He didn't think AI could do much for his kind of work. I'd been using chatbots since the first ones came out, so I kept telling him half of it didn't need doing by hand. It took a lot of insisting before he agreed to pay for a subscription and let me automate his tasks one at a time.</p>
+    <p>After a while he was the one asking for a bigger plan with more credits, because it saves him hours every week and he can take on more jobs. I still look after his setup.</p>
+  </section>
 
-<h2>AutonomIA</h2>
-<p><a href="https://www.autonomia-ia.es">AutonomIA</a> sets up AI for property appraisers, loss adjusters and building surveyors, and it has paying clients. Three appraisers use it every week. It has a Windows app, which you can get from the <a href="https://apps.microsoft.com/detail/9P2LGZ59R8SG">Microsoft Store</a>.</p>
-<p>For one appraiser, the assistant takes the sketch he draws during a visit and turns it into a plan to scale in PDF and DXF. It also gets a first version of his valuation onto one sheet, in the order he types it into his software, and he goes over it before he uses it.</p>
-<p>The everyday stuff is cadastre records, a warning when the floor area on the land registry note doesn't match the cadastre, comparables put into Excel with a link and a date each, and report drafts in Word. So far it has handled a bit over 400 requests.</p>
+  <section class="col">
+    <h2>Then people outside the family</h2>
+    <p>Plenty of other appraisers lose their days the same way, so I started AutonomIA to do for them what I'd done for him. I made a handful of cold calls, two appraisers took a trial, and both are still paying clients.</p>
+  </section>
 
-<h2>My agents</h2>
-<p>My own work runs on a team of AI agents on a PC at home, with one of them splitting up whatever I ask and passing the pieces to the others. The annoying part was memory. Agents forget what you asked once a chat gets long, so everything I ask goes on a list with my exact words and doesn't get ticked off until someone has checked the result against what I said, and nothing goes out to another person until I say yes.</p>
+  <section class="col" id="work">
+    <h2>How I go about it</h2>
+    <p>With each of them I built the environment before automating anything: the skills the work needs, access to the files and programs they already use, and their main workflows written down. When they correct something, the correction goes back into the setup, so over time it learns how that office works.</p>
+    <p>Then I work out what each task deserves. Research and writing go to an agent. A simple, predictable job gets a plain script, because paying an agent to do it every day wastes credits. This is how part of my stepfather's week got split. Pick a task to see which one it got.</p>
 
-<h2>A new client's first day</h2>
-<p>Day one is setting up the environment: the skills their work needs, access to their files and programs, their main workflows written down, and a way for all of it to get better as they use it. Comparables go to an agent, while copying a client's details from an email into a spreadsheet gets a plain script, because there's no point paying an agent for that every day. By the next morning they should be using a couple of things already.</p>
+    <div class="ledger">
+      <details>
+        <summary>Finding comparable sales for a property</summary>
+        <p><strong>Agent.</strong> It has to search, read the listings and decide which ones are close enough to count.</p>
+      </details>
+      <details>
+        <summary>Drafting the repetitive parts of a report</summary>
+        <p><strong>Agent.</strong> The wording changes with every property, and he reads the draft before it goes anywhere.</p>
+      </details>
+      <details>
+        <summary>Copying a client's details from an email into a spreadsheet</summary>
+        <p><strong>Script.</strong> The fields never change, so a script does it the same way on every run without spending credits.</p>
+      </details>
+      <details>
+        <summary>Checking that two official records give the same floor area</summary>
+        <p><strong>Script.</strong> It's a comparison between two numbers. The script flags a mismatch and he decides what to do about it.</p>
+      </details>
+    </div>
+  </section>
 
-<footer>
-  <p>Code: <a href="https://github.com/edupue-lab">github.com/edupue-lab</a></p>
+  <div class="band">
+  <section class="col" id="setup">
+    <h2>My own setup</h2>
+    <p>My own work runs on a team of AI agents on a PC at home. One of them takes whatever I ask, splits it up and hands the pieces to the others.</p>
+    <p>The hard part was memory, since agents forget what you asked once a chat gets long. So every request goes on a list in my exact words, and it isn't ticked off until someone has checked the result against what I said. When something goes wrong, the fix gets written down so the same mistake doesn't come back, and nothing goes out to another person until I've said yes.</p>
+  </section>
+  </div>
+
+  <section class="col" id="skills">
+    <h2>What I'm good at</h2>
+    <ul class="rows">
+      <li>Getting skeptical people to use AI</li>
+      <li>AI agents and multi-agent setups</li>
+      <li>Workflow automation</li>
+      <li>Writing prompts and agent skills</li>
+      <li>Small scripts for the predictable jobs</li>
+      <li>Marketing, which is what I study</li>
+    </ul>
+    <p class="aside">When I'm not doing any of this, I'm usually looking after the hardcore Minecraft server I run for my friends.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>Eduardo Puebla</span>
+  <a href="https://github.com/edupue-lab">GitHub</a>
 </footer>
+
 <script>
 var b=document.getElementById('theme'),r=document.documentElement;
-function label(){b.textContent=r.dataset.theme==='dark'?'Light mode':'Dark mode'}
+function dark(){return r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches}
+function label(){var d=dark();b.textContent=d?'Light mode':'Dark mode';b.setAttribute('aria-pressed',d)}
 label();
-b.onclick=function(){if(r.dataset.theme==='dark')delete r.dataset.theme;else r.dataset.theme='dark';label();try{localStorage.setItem('theme',r.dataset.theme||'light')}catch(e){}};
+b.onclick=function(){r.dataset.theme=dark()?'light':'dark';label();try{localStorage.setItem('theme',r.dataset.theme)}catch(e){}};
 </script>
 </body>
 </html>
