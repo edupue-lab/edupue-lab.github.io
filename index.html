@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eduardo Puebla</title>
+<meta name="description" content="Eduardo Puebla, 20. I study marketing and run AutonomIA, which sets up AI for property appraisers and other one-person practices.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eduardo Puebla">
+<meta property="og:description" content="20. I study marketing and run AutonomIA, which sets up AI for property appraisers and other one-person practices.">
+<meta property="og:url" content="https://edupue-lab.github.io/">
+<meta property="og:image" content="https://edupue-lab.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23222'/%3E%3Ctext x='8' y='13' font-family='Georgia,serif' font-size='13' text-anchor='middle' fill='%23fff'%3Ee%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+</head>
+<body>
+<header>
+  <h1>Eduardo Puebla</h1>
+  <button type="button" id="theme">Dark mode</button>
+</header>
+
+<p><img class="me" src="assets/eduardo.jpg" width="600" height="600" alt="Eduardo Puebla">Hi, I'm Eduardo. I'm 20 and I study marketing. When I'm not in class I'm usually working on AutonomIA or on the hardcore Minecraft server I run for my friends.</p>
+
+<h2>AutonomIA</h2>
+<p><a href="https://www.autonomia-ia.es">AutonomIA</a> sets up AI for property appraisers, loss adjusters and building surveyors, and it has paying clients.</p>
+<p>For one appraiser, the assistant takes the sketch he draws during a visit and turns it into a plan to scale in PDF and DXF. It also gets a first version of his valuation onto one sheet, in the order he types it into his software, and he goes over it before he uses it.</p>
+<p>The everyday stuff is cadastre records, a warning when the floor area on the land registry note doesn't match the cadastre, comparables put into Excel with a link and a date each, and report drafts in Word. A bit over 400 requests since mid-October. One client has used it every week since then.</p>
+
+<h2>My stepfather</h2>
+<p>The first person I did this for was my stepfather, who's an appraiser. I used to watch him spend hours at his laptop looking for comparables, writing reports that were mostly the last report again and typing whatever clients sent him into spreadsheets. I'd been using AI chatbots since they came out and kept telling him half of that could be automated, and it took ages before he agreed to pay for a subscription. Then I started automating his tasks one by one. After a while he was the one asking for a bigger plan with more credits, and I still look after his setup. In October I started doing the same for other appraisers.</p>
+
+<h2>My agents</h2>
+<p>My own work runs on a team of AI agents on a PC at home. One of them splits up whatever I ask and passes the pieces to the others. The annoying part was memory. Agents forget what you asked once a chat gets long, so now everything I ask goes on a list with my exact words, and it doesn't get ticked off until someone has checked the result against what I said. Nothing goes out to another person until I say yes.</p>
+
+<h2>A new client's first day</h2>
+<p>Day one is setting up the environment: the skills their work needs, access to their files and programs, their main workflows written down, and a way for all of it to get better as they use it. Comparables go to an agent. Copying a client's details from an email into a spreadsheet gets a plain script. No point paying an agent to do that every day. I want them using a couple of things the next morning.</p>
+
+<h2>Log</h2>
+<ul>
+  <li>4 Oct 2026, first commit of AutonomIA</li>
+  <li>5 Oct, started the website</li>
+  <li>14 Oct, first request from a user. Sorted it the same night</li>
+  <li>17 Oct, Windows app 1.1.0 (installs from one link)</li>
+  <li>20 Oct, it's on the Microsoft Store</li>
+  <li>23 Oct, first plan to scale, PDF and DXF, from measurements</li>
+  <li>25 Oct, my own tool for plans to scale works</li>
+  <li>26 Oct, set up my own agents</li>
+  <li>10 Nov, first valuation on a sheet ready to type into the appraiser's software</li>
+  <li>25 Nov, the nightly backup died. Git was too slow on a busy disk</li>
+  <li>26 Nov, an app update broke how my agents open chats. Fixed it that night</li>
+</ul>
+
+<footer>
+  <p>Code: <a href="https://github.com/edupue-lab">github.com/edupue-lab</a></p>
+</footer>
+<script>
+var b=document.getElementById('theme'),r=document.documentElement;
+function label(){b.textContent=r.dataset.theme==='dark'?'Light mode':'Dark mode'}
+label();
+b.onclick=function(){if(r.dataset.theme==='dark')delete r.dataset.theme;else r.dataset.theme='dark';label();try{localStorage.setItem('theme',r.dataset.theme||'light')}catch(e){}};
+</script>
+</body>
+</html>
