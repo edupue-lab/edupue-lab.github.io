@@ -63,7 +63,3 @@ ul { padding-left: 1.2em; margin: 0 0 1em; }
 li { margin-bottom: .3em; }
 .me { float: right; width: 128px; height: 128px; margin: .3em 0 .6em 1em; }
 @media (max-width: 480px) { .me { width: 96px; height: 96px; } }
-.pair { display: grid; gap: 12px; margin: 1.5em 0; }
-.pair img { width: 100%; height: auto; border-radius: 0; }
-.pair figcaption { grid-column: 1 / -1; }
-@media (min-width: 600px) { .pair { grid-template-columns: 1fr 1fr; align-items: start; } }
